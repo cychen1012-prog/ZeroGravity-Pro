@@ -35,17 +35,33 @@
       padding: 80px 20px;
       text-align: center;
     }
-    .features {
+   .features {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 30px;
       flex-wrap: wrap;
+      max-width: 1000px; /* 限制寬度讓它自動換行 */
+      margin: 0 auto;
     }
     .feature {
-      max-width: 250px;
+      flex: 0 1 calc(33% - 40px); /* 讓寬度大約佔三分之一 */
+      min-width: 250px;
+      margin-bottom: 40px;
+      padding: 20px;
     }
     .feature h3 {
+      font-size: 22px;
+      color: #333;
+    }
+    .feature p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #666;
+    }
+    .icon {
+      font-size: 40px; /* 圖示大小 */
       margin-bottom: 10px;
+      display: block;
     }
     .price {
       font-size: 40px;
@@ -65,35 +81,39 @@
 <header>
   <h1>ZeroGravity Pro</h1>
   <p>專為寵物家庭設計的智能吸塵器</p>
-  <a href="#" class="btn">立即購買</a>
 </header>
 
 <section>
   <h2>為什麼選擇 ZeroGravity Pro？</h2>
   <div class="features">
     <div class="feature">
-<h3>三合一機身</h3>
-  <p>• 專利快拆結構<br>3秒切換「手持長柄」、「除蟎儀」、「吸拖一體」</p>
-</div>
+      <span class="icon">🔄</span>
+      <h3>三合一機身</h3>
+      <p>專利快拆結構<br>3秒切換「手持長柄」、「除蟎儀」、「吸拖一體」</p>
+    </div>
 
-<div class="feature">
-  <h3>毛髮切割技術</h3>
-  <p>• 滾刷內建隱藏式合金刀片<br>自動切斷纏繞毛髮，解決長髮與寵物家庭痛點</p>
-</div>
+    <div class="feature">
+      <span class="icon">✂️</span>
+      <h3>毛髮切割技術</h3>
+      <p>滾刷內建隱藏式合金刀片<br>自動切斷纏繞毛髮，解決長髮與寵物家庭痛點</p>
+    </div>
 
-<div class="feature">
-  <h3>六重過濾系統</h3>
-  <p>• 採用H13等級HEPA濾網<br>過濾99.97%微米粉塵，避免二次空氣污染</p>
-</div>
+    <div class="feature">
+      <span class="icon">🛡️</span>
+      <h3>六重過濾系統</h3>
+      <p>採用H13等級HEPA濾網<br>過濾99.97%微米粉塵，避免二次空氣污染</p>
+    </div>
 
-<div class="feature">
-  <h3>AI環境感測</h3>
-  <p>• 自動調節吸力<br>在地毯與硬質地板間無縫切換</p>
-</div>
+    <div class="feature">
+      <span class="icon">🧠</span>
+      <h3>AI環境感測</h3>
+      <p>自動調節吸力<br>在地毯與硬質地板間無縫切換</p>
+    </div>
 
-<div class="feature">
-  <h3>全自動自清潔基座</h3>
-  <p>• 結合「自動集塵」、「高溫洗拖布」、「臭氧殺菌」<br>實現 60 天免倒垃圾</p>
+    <div class="feature">
+      <span class="icon">🏠</span>
+      <h3>全自動自清潔基座</h3>
+      <p>結合「自動集塵」、「高溫洗拖布」、「臭氧殺菌」<br>實現 60 天免倒垃圾</p>
     </div>
   </div>
 </section>
